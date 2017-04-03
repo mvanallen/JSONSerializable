@@ -1,9 +1,11 @@
 # JSONSerializable
-[![GitHub release](https://img.shields.io/github/release/mvanallen/JSONSerializable.svg)]()
-[![Supported platforms](https://img.shields.io/badge/platforms-_macOS_%7C%20iOS_%7C%20watchOS_%7C%20tvOS_%7C%20Linux-000000.svg)]()
-[![license](https://img.shields.io/github/license/mvanallen/JSONSerializable.svg)]()
+
+[![GitHub release](https://img.shields.io/github/release/mvanallen/JSONSerializable.svg)](https://github.com/mvanallen/JSONSerializable/releases/latest)
+[![Supported platforms](https://img.shields.io/badge/platforms-_macOS_%7C%20iOS_%7C%20watchOS_%7C%20tvOS_%7C%20Linux-000000.svg)](https://github.com/mvanallen/JSONSerializable#requirements)
+[![license](https://img.shields.io/github/license/mvanallen/JSONSerializable.svg)](https://github.com/mvanallen/JSONSerializable/blob/master/LICENSE)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg)](https://github.com/Carthage/Carthage)
-[![Swift Package Manager compatible](https://img.shields.io/badge/Swift%20Package%20Manager-compatible-brightgreen.svg)](https://github.com/apple/swift-package-manager)
+[![Swift PM compatible](https://img.shields.io/badge/Swift%20PM-compatible-brightgreen.svg)](https://github.com/apple/swift-package-manager)
+[![Team Tabs](https://img.shields.io/badge/Team-Tabs-blue.svg)](https://github.com/mvanallen/JSONSerializable/blob/master/.editorconfig)
 
 **JSONSerializable** is multi-platform library for quick and easy serialization of Swift data structures to JSON. It supports any combination of the following types:
 
@@ -18,6 +20,7 @@ so he deserves all the credit for it. If you haven't done so already, then you s
 
 ## Requirements
 
+- macOS 10.10 | iOS 8 | watchOS 2 | tvOS 9 | Ubuntu 16.04
 - XCode 8
 - Swift 3
 
@@ -41,9 +44,9 @@ Afterwards, integrate the framework into your build phase according to [Carthage
 
 Add the library to the `dependencies` of your `Package.swift`:
 
- ```sh
+ ```swift
  dependencies: [
-     .Package(url: "https://github.com/mvanallen/JSONSerializable.git", majorVersion: 1)
+ 	.Package(url: "https://github.com/mvanallen/JSONSerializable.git", majorVersion: 1)
  ]
  ```
  ```
@@ -153,7 +156,7 @@ If you have `Docker` installed, here's an easy way to quickly check the testcase
 To quickly build a release `.zip` of all targets for binary deployment, use:
 
 ```sh
-carthage build --no-skip-current && carthage archive
+$ carthage build --no-skip-current && carthage archive
 ```
 
 
